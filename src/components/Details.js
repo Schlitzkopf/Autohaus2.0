@@ -7,10 +7,10 @@ const Details = ({autos}) => {
     const selectCar = autos.find(auto => auto.sys.id === id)
     console.log(selectCar.fields.featureImage.fields.file)
     return (
-        <div>
+        <div className='post, container'>
             <h2 className='title'>{selectCar.fields.name}</h2>
             {selectCar.fields.featureImage.sys.id && <img className='featureImage' src={selectCar.fields.featureImage.fields.file.url} alt={selectCar.fields.name} title={selectCar.fields.name} />}
-            <section className='post' dangerouslySetInnerHTML={{ __html: selectCar.fields.discription }} />
+            <section dangerouslySetInnerHTML={{ __html: selectCar.fields.discription }} />
         </div>
     )
 }
