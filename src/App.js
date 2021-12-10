@@ -19,7 +19,7 @@ function App() {
       })
       .catch((error) => console.log(error));
   }, []);
-  
+
   return (
     <>
     {autos ? (<div className="App">
@@ -27,7 +27,7 @@ function App() {
     <Routes>
           <Route path="/" element={<Home />} /> 
           <Route path="products" element={<Products autos={autos}/>} />
-          <Route path="products/:id" element={<Details />} />
+          <Route path="products/:id" element={<Details autos={autos}/>} />
       </Routes>
   </div>) : ("Loading...")}
   </>
