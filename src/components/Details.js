@@ -3,10 +3,12 @@ import { useParams } from "react-router-dom";
 
 const Details = ({autos}) => {
     const { id } = useParams();
+    const { name } = useParams();
     
-    let ido = (id -1)
 
-    console.log(autos[ido])
+    console.log(id)
+    console.log(name)
+    // console.log(autos[0].name)
 
 
     //  const detail = autos[ido]
@@ -15,10 +17,9 @@ const Details = ({autos}) => {
 
     return (
         <div className='post, container'>
-            <h2>{}</h2>
-            <h2 className='title'>{autos[ido].name}</h2>
-            {autos[ido].featureimage && <img className='featureImage' src={autos[ido].featureimage} alt={autos[ido].name} title={autos[ido].name} />}
-            <section dangerouslySetInnerHTML={{ __html: autos[ido].description }} />
+            <h2 className='title'>{autos[id].name}</h2>
+            {autos[id].featureimage && <img className='featureImage' src={autos[id].featureimage} alt={autos[id].name} title={autos[id].name} />}
+            <section dangerouslySetInnerHTML={{ __html: autos[id].description }} />
         </div>
     )
 }
