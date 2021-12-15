@@ -162,6 +162,28 @@ a:hover {
 .title {
   background-color: #ffe4c4;
   font-size: 50px;
-  margin-left: 80px;
+  margin-left: 160px;
+  text-align: center;
+  width: 400px;
+  color: rgb(233, 221, 221);
+  background-color: rgba(22, 18, 18, 0.7);
+}
+
+.featureImage {
+  background-color: blanchedalmond;
+  background-color: rgba(14, 12, 12, 0.5);
+  margin-left: 150px;
+}
+
+.pupi {
+  font-size: 40px;
+
   width: 300px;
+  margin-left: 150px;
+  border-style: groove;
+  border-color: rgb(185, 37, 37);
+  background-color: rgb(233, 221, 221, 0.5);
+  border-width: 10px;
+  color: black;
+  text-align: center;
 }
