@@ -172,10 +172,8 @@ a:hover {
 .featureImage {
   background-color: blanchedalmond;
   background-color: rgba(14, 12, 12, 0.8);
-  margin-left: 130px;
+  margin-left: 150px;
   border-radius: 15px 15px 15px 15px;
-  max-height: fit-content;
-  max-width: fit-content;  
 }
 
 .pupi {
