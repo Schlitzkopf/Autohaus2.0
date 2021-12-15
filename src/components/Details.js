@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
 
-const Details = ({autos}) => {
+const  Details = ({autos}) => {
     const { id } = useParams();
     console.log(id);
     const selectCar = autos.find(auto => auto.id === id)
