@@ -4,22 +4,19 @@ import Home from "./components/Home";
 import Products from './components/Products';
 import Details from './components/Details';
 import Navbar from "./components/Navbar";
-import {client} from "./client";
+//import {client} from "./client";
 import {useState, useEffect} from "react";
 
-function App() {
+function App(props) {
   const [autos, setAutos] = useState();
 
   useEffect(() => {
-    client
-      .getEntries()
-      .then((response) => {
-        console.log(response.items);
-        setAutos(response.items);
-      })
-      .catch((error) => console.log(error));
+    fetch ("https://protected-fortress-31989.herokuapp.com/autos")
+      .then((response) => response.json())
+      .then((data) => setAutos(data.autos))
+      .catch((err) => console.log(err));
   }, []);
-
+  console.log(autos);
   return (
     <>
     {autos ? (<div className="App">
