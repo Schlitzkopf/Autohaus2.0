@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
 
-const Details = ({autos}) => {
+const  Details = ({autos}) => {
     const { id } = useParams();
     const { name } = useParams();
     

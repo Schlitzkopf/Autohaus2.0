@@ -12,7 +12,7 @@ const Products = ({autos}) => {
                 <h2 className='title'>{auto.name}</h2>      
                 {auto.featureimage && <img className='featureImage' src={auto.featureimage} alt={auto.name} title={auto.name} />}
                 
-                <Link to={`/auto/${auto.id}`}>Details</Link>
+                <Link to={`/auto/${auto.id}`} className="pupi" >DETAILS</Link>
                 {console.log(auto)}
                 </div>
                 
