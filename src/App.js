@@ -24,7 +24,7 @@ function App(props) {
     <Routes>
           <Route path="/" element={<Home />} /> 
           <Route path="products" element={<Products autos={autos}/>} />
-          <Route path="products/:id" element={<Details autos={autos}/>} />
+          <Route path="auto/:id" element={<Details />} />
       </Routes>
   </div>) : ("Loading...")}
   </>
