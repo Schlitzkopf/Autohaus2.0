@@ -16,10 +16,10 @@ const  Details = ({autos}) => {
 
 
     return (
-        <div className='post, container'>
-            <h2 className='title'>{autos[id].name}</h2>
-            {autos[id].featureimage && <img className='featureImage' src={autos[id].featureimage} alt={autos[id].name} title={autos[id].name} />}
-            <section dangerouslySetInnerHTML={{ __html: autos[id].description }} />
+        <div className='flex, container'>
+            <h2 className='titleDetail'>{autos[id].name}</h2>
+            {autos[id].featureimage && <img className='featureImageDetail' src={autos[id].featureimage} alt={autos[id].name} title={autos[id].name} />}
+            <section className='description' dangerouslySetInnerHTML={{ __html: autos[id].description }} />
         </div>
     )
 }

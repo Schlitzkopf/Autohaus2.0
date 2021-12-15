@@ -103,7 +103,7 @@ body {
 }
 
 a:visited {
-  color: Black;
+  color: aliceblue;
 }
 
 a:hover {
@@ -148,14 +148,10 @@ a:hover {
   width: 100%;
 }
 
-.autoId {
-  visibility: hidden;
-}
 
 .navTags {
-  font-size: 50px;
+  font-size: 25px;
   margin: 15px;
-
   border-radius: 10px;
   text-shadow: 2px 2px 5px rgb(233, 220, 220);
   font-weight: bold;
@@ -164,29 +160,74 @@ a:hover {
 
 .title {
   background-color: #ffe4c4;
-  font-size: 50px;
+  font-size: 30px;
   margin-left: 160px;
   text-align: center;
-  width: 400px;
+  width: 350px;
   color: rgb(233, 221, 221);
-  background-color: rgba(22, 18, 18, 0.7);
+  background-color: rgba(22, 18, 18, 0.8);
+  border-radius: 15px 15px 15px 15px;
 }
 
 .featureImage {
   background-color: blanchedalmond;
-  background-color: rgba(14, 12, 12, 0.5);
-  margin-left: 150px;
+  background-color: rgba(14, 12, 12, 0.8);
+  margin-left: 130px;
+  border-radius: 15px 15px 15px 15px;
+  max-height: fit-content;
+  max-width: fit-content;  
 }
 
 .pupi {
-  font-size: 40px;
-
-  width: 300px;
+  font-size: 15px;
+  width: 170px;
   margin-left: 150px;
+  margin-top: 1em;
   border-style: groove;
   border-color: rgb(185, 37, 37);
-  background-color: rgb(233, 221, 221, 0.5);
-  border-width: 10px;
-  color: black;
+  background-color: rgba(22, 18, 18, 0.8);
+  border-style: hidden;
+  color: aliceblue;
   text-align: center;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.description {
+  color: aliceblue;
+  background-color: blanchedalmond;
+  background-color: rgba(14, 12, 12, 0.9);
+  width: 30em;
+  justify-content: center;
+  margin-left: 250px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.featureImageDetail {
+  background-color: blanchedalmond;
+  background-color: rgba(14, 12, 12, 0.9);
+  width: 30em;
+  margin-left: 250px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.flex { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  background-color: blanchedalmond;
+  background-color: rgba(14, 12, 12, 0.9);
+  height: 30em;
+  width: 50em;
+}
+
+.titleDetail {
+  background-color: #ffe4c4;
+  font-size: 40px;
+  margin-left: 280px;
+  text-align: center;
+  justify-content: center;
+  width: 400px;
+  color: rgb(233, 221, 221);
+  background-color: rgba(22, 18, 18, 0.9);
+  border-radius: 15px 15px 15px 15px;
 }
