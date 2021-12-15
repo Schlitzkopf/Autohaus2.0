@@ -90,15 +90,14 @@ body {
 .home {
   text-align: center;
   margin: auto;
-  
   color: rgb(240, 220, 220);
   border-style: none;
   border-radius: 5px;
-     background-color: rgba(8, 6, 6, 0.5);
-
+  background-color: rgba(8, 6, 6, 0.5);
   font-size: 0.7em;
   width: 1300px;
   font-size: 20px;
+  border-radius: 15px 15px 15px 15px;
   
 }
 
