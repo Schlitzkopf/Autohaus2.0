@@ -3,23 +3,19 @@ import { useParams } from "react-router-dom";
 
 const  Details = ({autos}) => {
     const { id } = useParams();
-    const { name } = useParams();
-    
-
-    console.log(id)
-    console.log(name)
-    // console.log(autos[0].name)
 
 
-    //  const detail = autos[ido]
-    // console.log(detail)
+    const auto = autos.filter((element) => {
 
-
+        return element.id == id
+        
+    }) 
+  
     return (
         <div className='flex, container'>
-            <h2 className='titleDetail'>{autos[id].name}</h2>
-            {autos[id].featureimage && <img className='featureImageDetail' src={autos[id].featureimage} alt={autos[id].name} title={autos[id].name} />}
-            <section className='description' dangerouslySetInnerHTML={{ __html: autos[id].description }} />
+            <h2 className='titleDetail'>{auto[0].name}</h2>
+            {auto[0].featureimage && <img className='featureImageDetail' src={auto[0].featureimage} alt={auto[0].name} title={auto[0].name} />}
+            <section className='description' dangerouslySetInnerHTML={{ __html: auto[0].description }} />
         </div>
     )
 }
