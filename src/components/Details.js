@@ -7,7 +7,7 @@ const  Details = ({autos}) => {
 
     const auto = autos.filter((element) => {
 
-        return element.id == id
+        return element.id === parseInt(id, 10)
         
     }) 
   
